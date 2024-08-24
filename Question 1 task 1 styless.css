@@ -1,0 +1,65 @@
+/* Reset some defualt styles */
+body, h1, u1, li, a, div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: felx;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-image: url('header-background.jpg'); /* Replace with your image URL */
+    background-color: cover;
+    background-color: center;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: black;
+}
+
+.nav a:hover {
+    background-color: #575757;
+}
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 20px;
+    border: 1px solid #Add;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px
+}
