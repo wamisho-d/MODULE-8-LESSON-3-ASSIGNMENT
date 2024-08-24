@@ -1,0 +1,65 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header, .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.nav, .main {
+    padding: 1em;
+}
+
+.nav {
+    background-color: #f4f4f4;
+}
+
+.main {
+    background-color: #e2e2e2;
+}
+
+/* Flexbox layout for larger screens */
+@media (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .header, .footer {
+        flex:  0 0 auto;
+    }
+
+    .nav, .main {
+        flex: 1;
+        display: flex;
+    }
+
+    .main {
+        flex: 1;
+    }
+
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 599px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header, .footer {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+
+    .nav, .main {
+        flex: 1;
+        width: 100%;
+        display: block;
+    }
+}
